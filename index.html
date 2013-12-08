@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Tip Over Designer</title>
+  <style type="text/css">
+    .tipover table tr td { border: 1px solid black; width: 100px; height: 100px; }
+    .tipover table { border-collapse: collapse; }
+  </style>
+</head>
+<body>
+
+<h1>Colin's Tip Over Level Designer</h1>
+
+<div class="tipover"></div>
+
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script>
+
+  var WHITE = '#ffffff';
+  var YELLOW = '#fffe19';
+  var GREEN = '#2af03c';
+
+  $(function() {
+    var container = $('.tipover');
+    var board = createBoard(container);
+
+
+  });
+
+
+  function createBoard(container) {
+    // create a 6x6 board
+    var board = $('<table/>');
+
+    for (var x = 0; x < 6; x++) {
+      var row = $('<tr/>').appendTo(board);
+      for (var y = 0; y < 6; y++) {
+        var cell = $('<td/>').appendTo(row);
+        cell.data('color', WHITE);
+        cell.click(clickCell);
+      };
+    };
+
+    board.appendTo(container);
+  }
+
+  function clickCell() {
+    var cell = $(this);
+    var color = cell.data('color');
+
+    var newColor;
+    if (color === WHITE) {
+      newColor = YELLOW;
+    }
+    if (color === YELLOW) {
+      newColor = GREEN;
+    }
+
+    changeColor(cell, newColor);
+
+  }
+
+  function changeColor(cell, newColor) {
+    cell.css('background-color', newColor);
+    cell.data('color', newColor);
+  }
+
+
+</script>
+
+</body>
+</html>
