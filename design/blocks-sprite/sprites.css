@@ -1,0 +1,28 @@
+.block-blue, .block-green, .block-red, .block-yellow{
+	background: url(sprites.png) no-repeat;
+}
+
+.block-blue{
+	background-position: -90px 0;
+	width: 30px;
+	height: 30px;
+}
+
+.block-green{
+	background-position: -60px 0;
+	width: 30px;
+	height: 30px;
+}
+
+.block-red{
+	background-position: -30px 0;
+	width: 30px;
+	height: 30px;
+}
+
+.block-yellow{
+	background-position: 0 0;
+	width: 30px;
+	height: 30px;
+}
+

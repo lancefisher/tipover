@@ -1,0 +1,42 @@
+.tipover {
+  background: url(board.png) no-repeat;
+  width: 220px;
+  height: 247px;
+  padding-top: 26px;
+  padding-left: 15px;
+}
+
+.tipover table tr td {
+  border: 0;
+  padding: 0;
+  padding-bottom: 1px;
+  padding-right: 1px;
+  width: 30px;
+  height: 30px;
+}
+
+.tipover table {
+  border-collapse: collapse;
+}
+
+.yellow, .green, .blue, .red {
+  background: url(sprites.png) no-repeat;
+  width: 30px;
+  height: 30px;
+}
+
+.yellow {
+  background: url('sprites.png') no-repeat 0 -1px;
+}
+
+.green {
+  background: url('sprites.png') no-repeat -32px -1px;
+}
+
+.blue {
+  background: url('sprites.png') no-repeat -64px -1px;
+}
+
+.red {
+  background: url('sprites.png') no-repeat -96px -1px;
+}
