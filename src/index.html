@@ -2,18 +2,40 @@
 <html>
 <head>
   <title>Tip Over Designer</title>
+  <meta name="viewport" content="width=500, user-scalable=no">
   <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
 
-<h1>Colin's Tip Over Level Designer</h1>
+  <div class="card outline">
+    <div class="header">
+      <h1>TipOver</h1>
+    </div>
+    <div class="board tipover"></div>
+    <div class="footer">
+      <h2 class='level'>
+      </h2>
+      <p>
+        Colin
+      </p>
+    </div>
+  </div>
 
-<div class="tipover"></div>
+  <div class="page-break"></div>
+
+  <div class="card">
+    <div class="board tipover-solution"></div>
+    <div class="solution">
+      <h2>Solution:</h2>
+      <div class='divider'></div>
+    </div>
+  </div>
 
 
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script src="hammer.js"></script>
-<script src="tipover.js"></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="bower_components/hammerjs/dist/hammer.min.js"></script>
+  <script src="bower_components/jquery-hammerjs/jquery.hammer.min.js"></script>
+  <script src="tipover.js"></script>
 
 </body>
 </html>
