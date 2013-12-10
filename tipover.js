@@ -21,7 +21,7 @@ $(function() {
 
     var solutionCell = solutionCells[cellIndex];
     changeColor(solutionCell, newColor);
-    solutionCell.html(cellIndex + 1);
+    solutionCell.html(newColor ? cellIndex + 1 : '');
 
     ev.stopPropagation();
   })
