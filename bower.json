@@ -1,0 +1,21 @@
+{
+  "name": "tipover",
+  "version": "0.0.0",
+  "authors": [
+    "Lance Fisher <lance.fisher@gmail.com>"
+  ],
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "hammerjs": "~1.0.5",
+    "jquery-hammerjs": "*"
+  }
+}
